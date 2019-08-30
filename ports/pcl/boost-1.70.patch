@@ -19,7 +19,7 @@ index 68cc438..8cfa1c6 100644
  
  # Boost (required)
  include("${PCL_SOURCE_DIR}/cmake/pcl_find_boost.cmake")
-+if (NOT APPLE)
++if (CMAKE_COMPILER_IS_GNUCXX)
 +    add_definitions(-fext-numeric-literals)
 +endif()
  
